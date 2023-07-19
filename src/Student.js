@@ -4,16 +4,20 @@ const Student = (props) => {
   return (
     <div>
       <h1>Student Name is {props.name}</h1>
+      <h1>Age {props.sum}</h1>
+      <h1>Class {props.class}</h1>
     </div>
   );
 };
 
 Student.propTypes={
-    name: pt.string
+    name: pt.string,
+    sum:pt.number,
 }
 
 Student.defaultProps={
-    name:"Saurav"
+    name:"Saurav",
+    class:12,
 }
 
 

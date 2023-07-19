@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div>
       <h1>App component</h1>
-      <Student name="Rahul"/>
+      <Student name="Rahul" sum={10+2}/>
     </div>
   );
 };
