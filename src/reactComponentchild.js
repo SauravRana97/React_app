@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./css/Common.css"
 const Componentchild =(props)=>{
     return(
         <>
-        <h1>
+        <h1 className="box">
         Componentchild {props.children}
         </h1>
         </>

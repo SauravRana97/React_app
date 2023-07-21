@@ -1,8 +1,9 @@
 import React from "react";
 import pt from "prop-types"
+import "./css/Common.css"
 const ReactProptype = (props) => {
   return (
-    <div>
+    <div className="box">
       <h1>Student Name is {props.name}</h1>
       <h1>Age {props.sum}</h1>
       <h1>Class {props.class}</h1>
