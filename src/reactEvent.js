@@ -1,13 +1,11 @@
-import React from "react";
+import React,{ useState } from "react";
 import "./css/Common.css";
 
 const ReactEvent = () => {
-  let name = "saurav";
+  let [ name, setname] = useState("saurav");
 
   const clickbtn = (value) => {
-    console.log("Name old value", name);
-    name = value;
-    console.log("Name New Value", name);
+    setname(value)
     // document.getElementsByClassName("button").style.display="show";
   };
 
