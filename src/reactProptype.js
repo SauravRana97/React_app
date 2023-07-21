@@ -1,6 +1,6 @@
 import React from "react";
 import pt from "prop-types"
-const Proptype = (props) => {
+const ReactProptype = (props) => {
   return (
     <div>
       <h1>Student Name is {props.name}</h1>
@@ -10,15 +10,15 @@ const Proptype = (props) => {
   );
 };
 
-Proptype.propTypes={
+ReactProptype.propTypes={
     name: pt.string,
     sum:pt.number,
 }
 
-Proptype.defaultProps={
+ReactProptype.defaultProps={
     name:"Saurav",
     class:12,
 }
 
 
-export default Proptype;
+export default ReactProptype;
