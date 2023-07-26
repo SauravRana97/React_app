@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./css/Common.css"
+import "../css/Common.css"
 class reactstate extends Component {
 
     state={

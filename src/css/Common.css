@@ -1,7 +1,14 @@
-.button{
-    display: none;
+.home {
+  width: 100%;
+  border-radius: 10px 10px;
+  background-image: url("../asset/homebg.png");
 }
-.box{
-    border: 3px solid #333333;
-    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+.box {
+  width: 50%;
+  height: 50vh;
+  padding: 0 0 0 0;
+  margin: 10% 0 0 30%;
+  border-radius: 10px 10px;
+  color: aliceblue;
+  background-color: cornflowerblue;
 }

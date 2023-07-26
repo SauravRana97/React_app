@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./css/Common.css";
+import "../css/Common.css";
 
 //implement all diffrent method of event handling
 const ReactEvent = () => {

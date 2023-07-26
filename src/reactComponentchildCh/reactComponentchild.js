@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/Common.css"
+import "../css/Common.css"
 const Componentchild =(props)=>{
     return(
         <>

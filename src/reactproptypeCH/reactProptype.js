@@ -1,6 +1,6 @@
 import React from "react";
 import pt from "prop-types"
-import "./css/Common.css"
+import "../css/Common.css"
 const ReactProptype = (props) => {
   return (
     <div className="box">
