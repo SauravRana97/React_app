@@ -1,13 +1,13 @@
 import React from "react";
-import "../../asset/css/Common.css";
+// import "../../asset/css/Common.css";
 import Reactstate from "../../reactStateCH/reactState";
 import ReactEffect from "../../reactuseEffect/reactuseEffect";
 
 const Simpleconditional = () => {
-  const value = false;
+  const value = true;
   if (value) {
     return <Reactstate />;
   }
   return <ReactEffect />;
 };
-export default Simpleconditional;
+export default Simpleconditional;  
