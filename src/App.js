@@ -6,19 +6,26 @@ import "../src/asset/css/Common.css";
 // import Reactclass from "./reactclassCh/reactclass";
 // import ReactEvent from "./reactEventCh/reactEvent";
 // import Reactmount from "./reactlifecyclehookCh/reactmount/reactMount"
-import Reactupdate from "./reactlifecyclehookCh/reactupdate/reactUpdate";
+// import Reactupdate from "./reactlifecyclehookCh/reactupdate/reactUpdate";
+// import Reactunmounted from "./reactlifecyclehookCh/reactumount/reactUnmonuted"
+// import ReactEffect from "./reactuseEffect/reactuseEffect";
+import ReactcustomHook from "./reactcustomHook/reactcustomHook"
 
 const App = () => {
   return (
-    <div className="home">
-      <h1>React component Render all Imported Component</h1>
+    <div>
+      <h1 className="home">React component Render all Imported Component</h1>
       {/* <ReactPropType name="Rahul" sum={10+2}/>
       <Componentchild> is Rahul</Componentchild>
-      <Reactstate/>
       <Reactclass/>
-      <ReactEvent/> */}
-      {/* <Reactmount /> */}
-      <Reactupdate />
+      <ReactEvent/> 
+      <Reactmount /> 
+      <Reactunmounted/>
+      <Reactstate/>
+      <ReactEffect />
+      <Reactupdate /> */}
+      <ReactcustomHook/>
+
     </div>
   );
 };

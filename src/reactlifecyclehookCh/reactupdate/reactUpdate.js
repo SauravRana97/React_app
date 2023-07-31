@@ -18,15 +18,18 @@ export default class updated extends Component {
 
   componentDidUpdate() {
     console.log("Update Component");
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       this.setState({ name: "Saurav" });
     }, 3000);
+    return  clearTimeout(timeout)
+    
   }
 
   render() {
     const clickbtn = (value) => {
       this.setState({ name: value });
     };
+
     return (
       <div className="box">
         <h1>Update Component </h1>
