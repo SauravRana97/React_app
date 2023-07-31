@@ -9,7 +9,8 @@ import "../src/asset/css/Common.css";
 // import Reactupdate from "./reactlifecyclehookCh/reactupdate/reactUpdate";
 // import Reactunmounted from "./reactlifecyclehookCh/reactumount/reactUnmonuted"
 // import ReactEffect from "./reactuseEffect/reactuseEffect";
-import ReactcustomHook from "./reactcustomHook/reactcustomHook"
+// import ReactcustomHook from "./reactcustomHook/reactcustomHook"
+import Reactconditonal from "./reactConditionalCH/reactconditional";
 
 const App = () => {
   return (
@@ -23,9 +24,9 @@ const App = () => {
       <Reactunmounted/>
       <Reactstate/>
       <ReactEffect />
-      <Reactupdate /> */}
       <ReactcustomHook/>
-
+      <Reactupdate /> */}
+      <Reactconditonal />
     </div>
   );
 };
