@@ -10,7 +10,8 @@ import "../src/asset/css/Common.css";
 // import Reactunmounted from "./reactlifecyclehookCh/reactumount/reactUnmonuted"
 // import ReactEffect from "./reactuseEffect/reactuseEffect";
 // import ReactcustomHook from "./reactcustomHook/reactcustomHook"
-import Reactconditonal from "./reactConditionalCH/reactconditional";
+// import Reactconditonal from "./reactConditionalCH/reactconditional";
+import Reactmap from "./reactListCh/reactmaplist"
 
 const App = () => {
   return (
@@ -25,8 +26,9 @@ const App = () => {
       <Reactstate/>
       <ReactEffect />
       <ReactcustomHook/>
-      <Reactupdate /> */}
       <Reactconditonal />
+      <Reactupdate /> */}
+      <Reactmap arrvalues={[20,20,30,50]}/>
     </div>
   );
 };
