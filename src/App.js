@@ -1,10 +1,11 @@
 import React from "react";
 import "../src/asset/css/Common.css";
+
 // import ReactPropType from "./reactproptypeCH/reactProptype";
 // import Componentchild from "./reactComponentchildCh/reactComponentchild";
 // import Reactstate from "./reactStateCH/reactState";
 // import Reactclass from "./reactclassCh/reactclass";
-// import ReactEvent from "./reactEventCh/reactEvent";
+import ReactEvent from "./reactEventCh/reactEvent";
 // import Reactmount from "./reactlifecyclehookCh/reactmount/reactMount"
 // import Reactupdate from "./reactlifecyclehookCh/reactupdate/reactUpdate";
 // import Reactunmounted from "./reactlifecyclehookCh/reactumount/reactUnmonuted"
@@ -12,7 +13,8 @@ import "../src/asset/css/Common.css";
 // import ReactcustomHook from "./reactcustomHook/reactcustomHook"
 // import Reactconditonal from "./reactConditionalCH/reactconditional";
 // import Reactmap from "./reactListCh/reactmaplist"
-import Reactcss from "./reactCss/reactcss"
+// import Reactcss from "./reactCss/reactcss"
+// import Reactimg from "./reactAssetCh/reactimg"
 
 const App = () => {
   return (
@@ -29,8 +31,10 @@ const App = () => {
       <ReactcustomHook/>
       <Reactconditonal />
       <Reactmap arrvalues={[20,20,30,50]}/>
-      <Reactupdate /> */}
       <Reactcss/>
+      <Reactimg/>
+      <Reactupdate /> */}
+      <ReactEvent/>
 
     </div>
   );
