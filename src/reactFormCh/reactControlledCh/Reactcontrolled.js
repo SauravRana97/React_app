@@ -25,7 +25,7 @@ export default function Controlledcomponent() {
           onChange={(e) => setformData(e.target.value)}
         ></input>
         <Button variant="danger" name="button">
-          Submit
+          Submits
         </Button>
       </form>
     </div>
