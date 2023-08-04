@@ -5,7 +5,7 @@ import "../src/asset/css/Common.css";
 // import Componentchild from "./reactComponentchildCh/reactComponentchild";
 // import Reactstate from "./reactStateCH/reactState";
 // import Reactclass from "./reactclassCh/reactclass";
-import ReactEvent from "./reactEventCh/reactEvent";
+// import ReactEvent from "./reactEventCh/reactEvent";
 // import Reactmount from "./reactlifecyclehookCh/reactmount/reactMount"
 // import Reactupdate from "./reactlifecyclehookCh/reactupdate/reactUpdate";
 // import Reactunmounted from "./reactlifecyclehookCh/reactumount/reactUnmonuted"
@@ -14,7 +14,8 @@ import ReactEvent from "./reactEventCh/reactEvent";
 // import Reactconditonal from "./reactConditionalCH/reactconditional";
 // import Reactmap from "./reactListCh/reactmaplist"
 // import Reactcss from "./reactCss/reactcss"
-// import Reactimg from "./reactAssetCh/reactimg"
+// import Reactimg from "./reactAssetCh/reactimg";
+import Reactcontrolled from "./reactFormCh/reactControlledCh/Reactcontrolled"
 
 const App = () => {
   return (
@@ -31,11 +32,11 @@ const App = () => {
       <ReactcustomHook/>
       <Reactconditonal />
       <Reactmap arrvalues={[20,20,30,50]}/>
-      <Reactcss/>
-      <Reactimg/>
-      <Reactupdate /> */}
       <ReactEvent/>
-
+      <Reactcss/>
+      <Reactimg />
+     <Reactupdate /> */}
+     <Reactcontrolled/>
     </div>
   );
 };

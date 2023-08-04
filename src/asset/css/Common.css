@@ -2,12 +2,13 @@ body {
   background-image: url("../img/homebg.png");
 }
 .home {
-  color: green;
+  color: white;
   padding: 5.5% 0 0 30%;
+  background-color: black;
 }
-.home h1 {
+/* .home h1 {
   margin: 0 0 0 0;
-}
+} */
 .box {
   width: 40%;
   /* height: 50vh; */
