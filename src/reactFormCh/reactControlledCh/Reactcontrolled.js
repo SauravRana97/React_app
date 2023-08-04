@@ -5,12 +5,19 @@ import Button from "react-bootstrap/Button";
 export default function Controlledcomponent() {
   const [formData, setformData] = useState({
     name: "",
-    // password: "",
-    // emailId: "",
+    password: "",
+    email: "",
   });
   const inputsHandler = (e) => {
     e.preventDefault();
-    console.log(e);
+    console.log(formData);
+  };
+  const handleChange = (event) => {
+    console.log("handle chnage",event.target)
+    const { name, value } = event.target;
+    setformData((prevFormData) => (
+      { ...prevFormData, [name]: value }
+      ));
   };
   return (
     <div className="box">
@@ -22,9 +29,28 @@ export default function Controlledcomponent() {
           id="name"
           name="name"
           value={formData.name}
-          onChange={(e) => setformData(e.target.value)}
+          onChange={handleChange}
         ></input>
-        <Button variant="danger" name="button">
+        <br></br>
+        <label>Psswd:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          value={formData.password}
+          onChange={handleChange}
+        ></input>
+        <br></br>
+        <label>Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+        ></input>
+        <br></br>
+        <Button variant="danger" type="submit" name="button">
           Submits
         </Button>
       </form>
