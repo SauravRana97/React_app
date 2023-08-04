@@ -15,8 +15,14 @@ export default function Controlledcomponent() {
     password: "",
     email: "",
   });
+  const [validated, setValidated] = useState(false);
   const inputsHandler = (e) => {
-    e.preventDefault();
+    const form = e.currentTarget;
+    if (form.checkValidity() === false) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    setValidated(true);
     // console.log(formData);
   };
   const handleChange = (event) => {
@@ -26,7 +32,7 @@ export default function Controlledcomponent() {
   };
   return (
     <Container fluid="sm">
-      <div className="box" style={{ width: "50%", height: "90%" }}>
+      <div class="registerForm">
         <Row>
           <Col>
             <Card style={{ height: "100%" }}>
@@ -44,13 +50,16 @@ export default function Controlledcomponent() {
           </Col>
           <Col>
             <Form
+              noValidate
+              validated={validated}
               onSubmit={inputsHandler}
-              style={{ width: "90%", margin: "20% 0 0 5%"}}
+              style={{ width: "90%", margin: "20% 0 0 5%" }}
             >
               {/* <Form.Label>Name</Form.Label> */}
               <Form.Group>
                 <FloatingLabel label="Enter Name" className="mt-3">
                   <Form.Control
+                    required
                     type="name"
                     placeholder="Enter Name"
                     id="name"
@@ -73,6 +82,7 @@ export default function Controlledcomponent() {
                 {/* <Form.Label>Password</Form.Label> */}
                 <FloatingLabel label="Enter Password" className="mt-3">
                   <Form.Control
+                    required
                     type="password"
                     placeholder="Enter Password"
                     id="password"
@@ -94,6 +104,7 @@ export default function Controlledcomponent() {
               <Form.Group>
                 <FloatingLabel label="Enter Email" className="mt-3">
                   <Form.Control
+                    required
                     type="email"
                     placeholder="Enter Email"
                     id="email"

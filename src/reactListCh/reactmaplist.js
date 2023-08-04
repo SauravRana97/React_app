@@ -4,6 +4,7 @@ const Maplist = (props) => {
   let data = [10, 20, 30, 40];
   let propdata = props.arrvalues;
   console.log(propdata);
+
     // let student = [
     //   { id: 1, name: "saurav", password: "saf324ds" },
     //   { id: 2, name: "akshay", password: "saf324dssadsad" },
@@ -33,8 +34,8 @@ const Maplist = (props) => {
       <p>State Data:</p>
       {arrayvalues.map((item) => {
         return (
-          <div key={item.id}>
-            <li >
+        <div key={item.id}>         
+            <li>
               Student Id:{item.id}
               <br></br>
               Student Name:{item.name}
