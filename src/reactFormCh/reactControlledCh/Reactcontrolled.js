@@ -32,7 +32,7 @@ export default function Controlledcomponent() {
   };
   return (
     <Container fluid="sm">
-      <div class="registerForm">
+      <div className="registerForm">
         <Row>
           <Col>
             <Card style={{ height: "100%" }}>
