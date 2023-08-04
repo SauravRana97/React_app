@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import FloatingLabel from "react-bootstrap/FloatingLabel";
 
 export default function Controlledcomponent() {
   const [formData, setformData] = useState({
@@ -25,35 +26,41 @@ export default function Controlledcomponent() {
   };
   return (
     <Container fluid="sm">
-      <div className="box">
+      <div className="box" style={{ width: "50%", height: "90%" }}>
         <Row>
           <Col>
-            <Card >
-              <Card.Text style={{color:"black",fontSize:"30px"}}>
-              React Form
-            </Card.Text>
+            <Card style={{ height: "100%" }}>
+              <Card.Text style={{ color: "black", fontSize: "30px" }}>
+                Sign up
+              </Card.Text>
               <Card.Img variant="top" src={pic} />
               <Card.Body>
                 {/* <Card.Title>Card Title</Card.Title> */}
-                
+
                 {/* <Button variant="primary">Go somewhere</Button> */}
               </Card.Body>
             </Card>
             {/* <h1>React Form</h1> */}
           </Col>
           <Col>
-            <Form onSubmit={inputsHandler}>
-              <Form.Label>Name</Form.Label>
+            <Form
+              onSubmit={inputsHandler}
+              style={{ width: "90%", margin: "20% 0 0 5%"}}
+            >
+              {/* <Form.Label>Name</Form.Label> */}
               <Form.Group>
-                <Form.Control
-                  type="name"
-                  placeholder="Enter Name"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                />
+                <FloatingLabel label="Enter Name" className="mt-3">
+                  <Form.Control
+                    type="name"
+                    placeholder="Enter Name"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                </FloatingLabel>
               </Form.Group>
+
               {/* <input
                 type="text"
                 id="name"
@@ -63,15 +70,17 @@ export default function Controlledcomponent() {
               ></input> */}
 
               <Form.Group>
-                <Form.Label>Password</Form.Label>
-                <Form.Control
-                  type="password"
-                  placeholder="Enter Password"
-                  id="password"
-                  name="password"
-                  value={formData.password}
-                  onChange={handleChange}
-                />
+                {/* <Form.Label>Password</Form.Label> */}
+                <FloatingLabel label="Enter Password" className="mt-3">
+                  <Form.Control
+                    type="password"
+                    placeholder="Enter Password"
+                    id="password"
+                    name="password"
+                    value={formData.password}
+                    onChange={handleChange}
+                  />
+                </FloatingLabel>
               </Form.Group>
               {/* <input
               type="password"
@@ -81,16 +90,18 @@ export default function Controlledcomponent() {
               onChange={handleChange}
             ></input> */}
 
-              <Form.Label>Email address</Form.Label>
+              {/* <Form.Label>Email address</Form.Label> */}
               <Form.Group>
-                <Form.Control
-                  type="email"
-                  placeholder="Enter Email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                />
+                <FloatingLabel label="Enter Email" className="mt-3">
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter Email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                </FloatingLabel>
               </Form.Group>
               {/* <input
               type="email"
@@ -100,13 +111,19 @@ export default function Controlledcomponent() {
               onChange={handleChange}
             ></input> */}
 
-              <Button variant="danger" type="submit" name="button">
+              <Button
+                variant="danger"
+                type="submit"
+                name="button"
+                style={{ width: "60%", margin: "10% 0 0 20% " }}
+              >
                 Submits
               </Button>
             </Form>
-              <Card.Text style={{color:"black",fontSize:"30px"}}>
-              Form data { formData.name} { formData.password}{ formData.email}
-              
+            <Card.Text style={{ color: "black", fontSize: "30px" }}>
+              {/* <p>{JSON.stringify(formData)}</p> */}
+              {/* Form data Output <br></br>Username:{formData.name}<br></br>Password:{formData.password}
+              <br></br> Email: {formData.email} */}
             </Card.Text>
           </Col>
         </Row>
