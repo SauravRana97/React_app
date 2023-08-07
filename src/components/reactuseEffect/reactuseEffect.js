@@ -8,7 +8,6 @@ const Reactuseeffect = () => {
   const [roll, setroll] = useState(0);
   const Handleclick = () => {
     setname("sakshi");
-    navigate(-1);
   };
   const rollupdate = () => {
     setroll(2);
@@ -28,6 +27,7 @@ const Reactuseeffect = () => {
       <button type="button" onClick={rollupdate}>
         Set rollNo
       </button>
+      <button type="button" onClick={()=>{navigate(-1)}}> Go back</button>
     </div>
   );
 };

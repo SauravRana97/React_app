@@ -15,6 +15,7 @@ import ReactEffect from "../components/reactuseEffect/reactuseEffect";
 // import Reactcss from "../components/reactCss/reactcss";
 // import Reactimg from "../components/reactAssetCh/reactimg";
 import Reactcontrolled from "../components/reactFormCh/reactControlledCh/Reactcontrolled";
+import Reactapi from "../components/reactApimethods/reactApi";
 
 export default function Router() {
   let element = useRoutes([
@@ -25,6 +26,10 @@ export default function Router() {
     {
       path: "/reactuse",
       element: <ReactEffect />,
+    },
+    {
+      path: "/reactapi",
+      element: <Reactapi />,
     },
   ]);
   return element;

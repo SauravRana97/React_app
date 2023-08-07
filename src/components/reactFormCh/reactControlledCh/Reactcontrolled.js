@@ -11,7 +11,6 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
-
 import { changevalue } from "../../../store/formcomponent/controledSlice";
 
 export default function Controlledcomponent() {
@@ -159,7 +158,9 @@ export default function Controlledcomponent() {
               <br></br> Email: {formData.email} */}
             </Card.Text>
             <ul>
-              <li><Link to="/reactuse">reactuse </Link> </li>
+              <li>
+                <Link to="/reactapi">Reactapi </Link>{" "}
+              </li>
               {/* <li> </li>
               <li> </li> */}
             </ul>
