@@ -9,6 +9,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+
 
 import { changevalue } from "../../../store/formcomponent/controledSlice";
 
@@ -156,6 +158,11 @@ export default function Controlledcomponent() {
               {/* Form data Output <br></br>Username:{formData.name}<br></br>Password:{formData.password}
               <br></br> Email: {formData.email} */}
             </Card.Text>
+            <ul>
+              <li><Link to="/reactuse">reactuse </Link> </li>
+              {/* <li> </li>
+              <li> </li> */}
+            </ul>
           </Col>
         </Row>
       </div>

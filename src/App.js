@@ -9,35 +9,25 @@ import React from "react";
 // import Reactmount from "./reactlifecyclehookCh/reactmount/reactMount"
 // import Reactupdate from "./reactlifecyclehookCh/reactupdate/reactUpdate";
 // import Reactunmounted from "./reactlifecyclehookCh/reactumount/reactUnmonuted"
-// import ReactEffect from "./reactuseEffect/reactuseEffect";
+// import ReactEffect from "./components/reactuseEffect/reactuseEffect";
 // import ReactcustomHook from "./reactcustomHook/reactcustomHook"
 // import Reactconditonal from "./reactConditionalCH/reactconditional";
 // import Reactmap from "./reactListCh/reactmaplist"
 // import Reactcss from "./reactCss/reactcss"
 // import Reactimg from "./reactAssetCh/reactimg";
-import Reactcontrolled from "./components/reactFormCh/reactControlledCh/Reactcontrolled"
+// import Reactcontrolled from "./components/reactFormCh/reactControlledCh/Reactcontrolled";
+
+import { BrowserRouter } from "react-router-dom";
+import Router from "./router/routes.js";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="home">React component Render all Imported Component</h1>
-      {/* <ReactPropType name="Rahul" sum={10+2}/>
-      <Componentchild> is Rahul</Componentchild>
-      <Reactclass/>
-      <ReactEvent/> 
-      <Reactmount /> 
-      <Reactunmounted/>
-      <Reactstate/>
-      <ReactEffect />
-      <ReactcustomHook/>
-      <Reactconditonal />
-      <Reactmap arrvalues={[20,20,30,50]}/>
-      <ReactEvent/>
-      <Reactcss/>
-      <Reactimg />
-     <Reactupdate /> */}
-     <Reactcontrolled/>
-    </div>
+    <BrowserRouter>
+      <div>
+        <h1 className="home">React component Render all Imported Component</h1>
+        <Router />
+      </div>
+    </BrowserRouter>
   );
 };
 

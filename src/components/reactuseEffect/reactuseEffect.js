@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
-import "../asset/css/Common.css";
+// import "../asset/css/Common.css";
+import { useNavigate } from "react-router-dom";
+
 const Reactuseeffect = () => {
+  let navigate = useNavigate();
   const [name, setname] = useState("saurav");
   const [roll, setroll] = useState(0);
   const Handleclick = () => {
     setname("sakshi");
+    navigate(-1);
   };
   const rollupdate = () => {
     setroll(2);
