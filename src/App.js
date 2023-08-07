@@ -1,5 +1,5 @@
 import React from "react";
-import "../src/asset/css/Common.css";
+// import "./asset/css/Common.css";
 
 // import ReactPropType from "./reactproptypeCH/reactProptype";
 // import Componentchild from "./reactComponentchildCh/reactComponentchild";
@@ -15,7 +15,7 @@ import "../src/asset/css/Common.css";
 // import Reactmap from "./reactListCh/reactmaplist"
 // import Reactcss from "./reactCss/reactcss"
 // import Reactimg from "./reactAssetCh/reactimg";
-import Reactcontrolled from "./reactFormCh/reactControlledCh/Reactcontrolled"
+import Reactcontrolled from "./components/reactFormCh/reactControlledCh/Reactcontrolled"
 
 const App = () => {
   return (
