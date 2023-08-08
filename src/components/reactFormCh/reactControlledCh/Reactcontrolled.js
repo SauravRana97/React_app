@@ -10,6 +10,7 @@ import Col from "react-bootstrap/Col";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import ListGroup from "react-bootstrap/ListGroup";
 
 import { changevalue } from "../../../store/formcomponent/controledSlice";
 
@@ -153,17 +154,16 @@ export default function Controlledcomponent() {
               >
                 ChangeValue
               </Button>
+
               {/* <p>{JSON.stringify(formData)}</p> */}
               {/* Form data Output <br></br>Username:{formData.name}<br></br>Password:{formData.password}
               <br></br> Email: {formData.email} */}
             </Card.Text>
-            <ul>
-              <li>
+            <ListGroup as="ol" numbered>
+              <ListGroup.Item variant="danger" as="li" >
                 <Link to="/reactapi">Reactapi </Link>{" "}
-              </li>
-              {/* <li> </li>
-              <li> </li> */}
-            </ul>
+              </ListGroup.Item>                                             
+            </ListGroup>
           </Col>
         </Row>
       </div>

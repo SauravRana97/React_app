@@ -25,7 +25,7 @@ const App = () => {
     <BrowserRouter>
       <div>
         <h1 className="home">React component Render all Imported Component</h1>
-        <Router />
+        <Router  />
       </div>
     </BrowserRouter>
   );

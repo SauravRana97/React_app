@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom";
+
 
 const Reactapi = () => {
   const [Data, setData] = useState({ data: [] });
-
+  const navigate = useNavigate();
   const getData = () => {
     const apiUrl = "https://api.github.com/users/hacktivist123/repos";
     fetch(apiUrl)
@@ -25,6 +27,16 @@ const Reactapi = () => {
       >
         Get Data
       </Button>
+      <Button
+        variant="warning"
+        type="button"
+        name="button"
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        Go back
+      </Button>
 
       {/* {Data.map((item) => {
         return (
@@ -39,12 +51,12 @@ const Reactapi = () => {
           </div>
         );
       })} */}
-      {Data.data.map((items,index) => {
-        return <div key={index}>
-            <li>
-                {items.name}
-            </li>
-        </div>;
+      {Data.data.map((items, index) => {
+        return (
+          <div key={index}>
+            <li>{items.name}</li>
+          </div>
+        );
       })}
     </div>
   );
